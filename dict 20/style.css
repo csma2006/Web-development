@@ -1,0 +1,22 @@
+.Box{
+    border: 2px solid black;
+    margin: 22px;
+    padding: 34px;
+    font-size: 54px;
+    text-align: center;
+    box-shadow: 20px 10px 5px grey;
+    text-shadow :  4px 8px 12px blueviolet;
+    outline: 4px solid rgb(255, 0, 0);
+}
+
+.Box2{
+    border: 2px solid black;
+    margin: 22px;
+    padding: 34px;
+    font-size: 54px;
+    text-align: center;
+    box-shadow: 20px 10px 15px 3px rgb(154, 98, 49);
+    text-shadow :  4px 8px 12px  rgb(132, 0, 255);
+    outline: 5px solid rgb(222, 135, 22);
+    border-radius: 34px;
+}

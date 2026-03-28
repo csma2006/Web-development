@@ -1,0 +1,19 @@
+There are three ways to connect html and css 
+
+
+1.inline css:
+  In this method the style tag is given in every line.
+  example:<h1 style="color: crimson; background-color: blueviolet;">Three Ways to Connect Html and CSS</h1>
+  cons:
+  It becomes becomes tds work if there are more number of lines of code.
+
+2. Internal CSS
+  In this method the we define a seperate style class in the html doc and group up attributes
+  with same colour.
+  pros:
+  better than inline can changes everything at once.
+  cons:
+  lines in HTML increase if there are more attributes the codes lines in html increase.
+
+3. External CSS.
+   In this method we create a new extended css file with .css and add all our styles in it in internal way 

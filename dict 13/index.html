@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+</head>
+<style>
+    /* class -selector */
+    .my-div{
+        color: red;
+        font-size: 20px;
+    }
+    /* Id -selector */
+    #green-div{
+        color: green;
+        font-size: 20px;
+    }
+
+    /* child selector */
+    /* This selector is used to select elements that are direct children of a specified element. */
+    div > p{
+        color: blue;
+        background-color: lightgray;     
+        font-size: 20px;
+    }
+    /* decender selector */
+    /* This selector is used to select elements that are descendants of a specified element, regardless of their level in the hierarchy. */ 
+    div p{
+        color: purple;
+        background-color: lightgray;
+        font-size: 20px;
+    }
+
+    /* universal selector */
+    /* this selector is used to select all elements on a page. It is represented by an asterisk * */
+    *{
+        margin:0;
+        padding:0;
+    }
+    /* Pseudo selectors */
+    /* This selector is used to select elements based on their state or position in the document. */
+    a:visited{
+        color: orange;
+    }
+    a:link{
+        color :aqua
+    }
+    a:active{
+        color :blueviolet
+    }
+    a:hover{
+        background-color: lightgray;
+    }
+
+
+</style>
+<body>
+    <div>
+        I am a div element.
+        <article>
+            <nav>
+                <header>
+                    <footer>
+                        <p>
+                            I am a paragraph element inside a footer, which is inside a header, which is inside a nav, which is inside an article, which is inside a div.
+                        </p>
+                    </footer>
+                </header>
+            </nav>
+        </article>
+    </div>
+    <div class = "my-div">
+        I am a div element.
+    </div>
+    <div id="green-div">
+        I am another div element.
+    </div>
+    <a href="https://www.google.com">Open Google</a>
+    <br>
+    <a href="https://www.Facebook.com">open Facebook</a>
+    <br>
+    <a href="https://www.twitter.com">open Twitter</a>
+    <br>
+    <a href="https://Leetcode.com">open Leetcode</a>
+</body>
+</html>
