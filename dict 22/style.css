@@ -1,0 +1,12 @@
+   .box p {
+       width: 30vw;
+       height: 40vh;
+       border: 2px solid black;
+       font-size: 20px;
+       overflow: auto;
+       /* white-space: nowrap; */
+       /*text-overflow: ellipsis; */
+       /* overflow-x: hidden;
+       overflow-y: auto; */
+       overflow: hidden auto;
+   }
