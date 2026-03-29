@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    width: 80vw;
+    height: 133px;
+    padding: 4px;
+    margin: 4px;
+    border: 2px solid black;
+
+}
+.parent{
+    padding: 43px;
+    margin: 35px;
+    border: 4px blueviolet solid;
+    /* position:absolute; */
+}
+
+.box1{
+    background-color: red;
+    position: sticky;
+     /* position: absolute;                 it becomes relative of nearest positioned ancestor which is parent in this case */
+    top:0px;                         
+}
+.box2{
+    background-color: blue;
+    position:fixed; /* it becomes relative to the viewport */
+}
+.box3{
+    background-color: green;
+    /* position :relative; */
+    top: 40px;
+    left: 40px;
+}
+.box4{
+    background-color: yellow;
+    /* transform, filter, perspective properties can also make  element appear as positioned */
+}
+.box5{
+    background-color: orange;
+}
