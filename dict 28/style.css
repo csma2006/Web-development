@@ -1,0 +1,17 @@
+.cards{
+    border: 2px solid black;
+    display: flow-root;
+    
+
+}
+img{
+    float:both;
+}
+.card{
+    border: 2px solid red;
+    padding:12px;
+}
+.card:nth-child(3){
+    background-color: cadetblue;
+    clear:both;
+}
