@@ -1,0 +1,42 @@
+:root{
+    --seccolor:blue;
+    --fcolor:yellow;
+    --backcolor:black;
+    --color:white;
+
+}
+body{
+    margin:0;
+    font-family: Arial;
+    background-color: aliceblue;
+}
+
+.navbar{
+    diplay:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:var(--backcolor);
+}
+.Logo{
+    
+    color:antiquewhite;
+    font-size: 43px;
+}
+.nav{
+    list-style: none;
+    display: flex;
+    gap:29px;
+}
+.nav li a{
+    --color:lightgreen;
+    color:var(--color);
+    text-decoration: none;
+    font-size: 33px;
+}
+.nav li a:hover{
+    background-color:var(--fcolor);
+    color:var(--seccolor);
+}
+.box{
+    font-size: 33px;
+}
