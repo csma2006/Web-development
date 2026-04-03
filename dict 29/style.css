@@ -29,5 +29,8 @@ p, a , .box, [data-color = "primary"]{
     content: "he-ehe";
     color: tomato;
 }
-
+input::placeholder{
+    color: red;
+    font-size: 20px;
+}
 
