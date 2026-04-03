@@ -1,0 +1,33 @@
+/* .box:first-child{
+    background-color: aqua;
+} */
+
+/* .box::first-line{
+    color:blueviolet
+
+} */
+/* 
+.boxes *{
+    background-color: pink;
+    border: 2px solid black;
+}
+p, a , .box, [data-color = "primary"]{
+    padding-top : 45px;
+} */
+
+/* .box:nth-child(even){
+
+    color:lightgreen
+} */
+
+.boxes::after{
+    content: "Lmao";
+    background-color:lightsteelblue ;
+
+}
+.boxes::before{
+    content: "he-ehe";
+    color: tomato;
+}
+
+

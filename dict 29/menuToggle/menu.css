@@ -1,0 +1,133 @@
+/* Body styling with gradient background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Hamburger toggle button styling */
+#menuToggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 0; /* Hide the "=" text */
+    line-height: 0;
+    transition: all 0.3s ease-out;
+}
+
+/* Middle line of hamburger */
+#menuToggle {
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Top line */
+#menuToggle::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    border-radius: 2px;
+    transition: all 0.3s ease-out;
+}
+
+/* Bottom line */
+#menuToggle::after {
+    content: '';
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    border-radius: 2px;
+    transition: all 0.3s ease-out;
+
+}
+
+/* Active state - transform to X */
+#menuToggle.active::before {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+#menuToggle.active {
+    background: transparent;
+}
+
+#menuToggle.active::after {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Sidebar menu styling */
+#menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background: #333;
+    transition: left 0.3s ease;
+    z-index: 999;
+    padding-top: 80px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+}
+
+#menu:not([hidden]) {
+    left: 0;
+}
+
+/* Menu links styling */
+.menu-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-links li {
+    margin: 0;
+}
+h1{
+    color: #fff;;
+    margin-top: 20px;
+    padding: 14px 20px;
+}
+
+.menu-links a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background 0.3s ease-out;
+}
+
+.menu-links a:hover {
+    background: #faf9f9;
+    color: #333;
+    /* transition: background 2s ease-out, color 2s ease-out; */
+}
+
+/* Overlay when menu is open */
+#menu:not([hidden])::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 250px;
+    width: calc(100vw - 250px);
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    z-index: -1;
+}
