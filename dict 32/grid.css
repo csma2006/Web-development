@@ -1,0 +1,33 @@
+.container{
+    border:4px solid green;
+    display: grid;
+    grid-template-areas: "nav nav nav"
+                        "side main main"
+                        "article article article"
+                        "foot foot foot";
+}
+.items{
+    border:4px solid lightblue;
+    height: 55px;
+
+}
+.item-1{
+    grid-area: nav;
+    background-color: lightcoral;
+}
+.item-2{
+    grid-area: side;
+    background-color: lightyellow;
+}
+.item-3{
+    grid-area: main;
+    background-color: lightgreen;
+}
+.item-4{
+    grid-area: article;
+    background-color: lightpink;
+}
+.item-5{
+    grid-area: foot;
+    background-color: lightsteelblue;
+}
