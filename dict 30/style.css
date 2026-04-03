@@ -8,11 +8,13 @@
     font-family: "Poppins", sans-serif;
 
 }
-
-.navbar {
+header{
     position: sticky;
-    width: 100%;
     top: 0;
+}
+.navbar {
+    width: 100%;
+    
 }
 
 .navbar ul {
