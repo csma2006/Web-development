@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition</title>
+    <style>
+        .box {
+            width: 60vw;
+            height: 60vh;
+            background-color: lightblue;
+            /* transition: background-color 0.5s ease;
+            transition-duration: 3.5s;
+            transition-timing-function: ease; */
+            transition: background-color 3.5s ease 2s;
+        }
+
+        .box:hover {
+            background-color: lightcoral;
+        }
+        .container{
+            width: 30px;
+            height: 30px;
+            background-color: lightgreen;
+        }
+        .translate{
+            transform: translate(100px, 100px);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="container translate"></div>
+    </div>
+</body>
+</html>
